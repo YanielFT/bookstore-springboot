@@ -1,0 +1,33 @@
+2026-02-09T15:55:01.919-05:00  INFO 12856 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 12856 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-09T15:55:01.919-05:00  INFO 12856 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-09T15:55:01.997-05:00  INFO 12856 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T15:55:01.997-05:00  INFO 12856 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-02-09T15:55:02.026-05:00  INFO 12856 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T15:55:02.028-05:00  INFO 12856 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T15:55:02.028-05:00  INFO 12856 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-09T15:55:02.037-05:00  INFO 12856 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-02-09T15:55:02.037-05:00  INFO 12856 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
+2026-02-09T15:55:02.043-05:00  WARN 12856 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-02-09T15:55:02.043-05:00  INFO 12856 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-09T15:55:02.046-05:00  INFO 12856 --- [bookstore] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-09T15:55:02.047-05:00 ERROR 12856 --- [bookstore] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
