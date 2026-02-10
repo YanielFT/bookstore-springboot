@@ -4542,3 +4542,452 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'hola@gmail.c
 2026-02-10T02:18:54.915-05:00  INFO 21560 --- [bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-02-10T02:18:54.916-05:00  INFO 21560 --- [bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2026-02-10T02:18:55.119-05:00  INFO 21560 --- [bookstore] [http-nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 90 ms
+2026-02-10T02:28:05.666-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-10T02:28:05.676-05:00  INFO 21560 --- [bookstore] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:28:05.677-05:00  INFO 21560 --- [bookstore] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-02-10T02:28:05.678-05:00  INFO 21560 --- [bookstore] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-02-10T02:28:05.715-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:28:05.716-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:28:05.716-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:28:05.815-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:28:05.820-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-02-10T02:28:05.875-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:28:05.875-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:28:05.875-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:28:05.888-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:28:05.888-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 171 ms
+2026-02-10T02:28:05.913-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:28:05.916-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:28:05.918-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:28:05.919-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-02-10T02:28:05.922-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@726f393
+2026-02-10T02:28:05.922-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-02-10T02:28:05.922-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:28:05.922-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:28:05.943-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:28:05.948-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:28:06.000-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:28:06.049-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:28:06.057-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:28:06.060-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.357 seconds (process running for 2364.534)
+2026-02-10T02:28:06.060-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:28:07.463-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-10T02:28:07.473-05:00  INFO 21560 --- [bookstore] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:28:07.473-05:00  INFO 21560 --- [bookstore] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-02-10T02:28:07.475-05:00  INFO 21560 --- [bookstore] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2026-02-10T02:28:07.511-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:28:07.511-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:28:07.511-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:28:07.594-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:28:07.598-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T02:28:07.632-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:28:07.632-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:28:07.632-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:28:07.641-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:28:07.642-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 130 ms
+2026-02-10T02:28:07.657-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:28:07.658-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:28:07.659-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:28:07.660-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-02-10T02:28:07.663-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2854a174
+2026-02-10T02:28:07.663-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-02-10T02:28:07.663-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:28:07.663-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:28:07.679-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:28:07.682-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:28:07.720-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:28:07.758-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:28:07.765-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:28:07.768-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.268 seconds (process running for 2366.242)
+2026-02-10T02:28:07.768-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:28:55.749-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-10T02:28:55.760-05:00  INFO 21560 --- [bookstore] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:28:55.760-05:00  INFO 21560 --- [bookstore] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-02-10T02:28:55.762-05:00  INFO 21560 --- [bookstore] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2026-02-10T02:28:55.803-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:28:55.803-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:28:55.803-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:28:55.920-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:28:55.939-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2026-02-10T02:28:55.982-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:28:55.983-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:28:55.983-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:28:55.995-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:28:55.995-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 191 ms
+2026-02-10T02:28:56.015-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:28:56.017-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:28:56.019-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:28:56.020-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-02-10T02:28:56.022-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41fc0635
+2026-02-10T02:28:56.023-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-02-10T02:28:56.023-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:28:56.023-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:28:56.039-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:28:56.043-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:28:56.086-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:28:56.122-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:28:56.126-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:28:56.129-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.341 seconds (process running for 2414.604)
+2026-02-10T02:28:56.129-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:30:32.713-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2026-02-10T02:30:32.724-05:00  INFO 21560 --- [bookstore] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:30:32.724-05:00  INFO 21560 --- [bookstore] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-02-10T02:30:32.725-05:00  INFO 21560 --- [bookstore] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2026-02-10T02:30:32.756-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:30:32.756-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:30:32.756-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:30:32.825-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:30:32.829-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T02:30:32.858-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:30:32.858-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:30:32.858-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:30:32.866-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:30:32.866-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2026-02-10T02:30:32.879-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:30:32.880-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:30:32.881-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:30:32.882-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-02-10T02:30:32.885-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b56ec8c
+2026-02-10T02:30:32.885-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-02-10T02:30:32.885-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:30:32.885-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:30:32.897-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:30:32.900-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:30:32.935-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:30:32.971-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:30:32.975-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:30:32.977-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.23 seconds (process running for 2511.452)
+2026-02-10T02:30:32.978-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:31:35.146-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2026-02-10T02:31:35.156-05:00  INFO 21560 --- [bookstore] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:31:35.156-05:00  INFO 21560 --- [bookstore] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-02-10T02:31:35.158-05:00  INFO 21560 --- [bookstore] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2026-02-10T02:31:35.193-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:31:35.193-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:31:35.193-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:31:35.270-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:31:35.274-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T02:31:35.303-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:31:35.303-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:31:35.304-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:31:35.312-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:31:35.312-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
+2026-02-10T02:31:35.324-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:31:35.326-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:31:35.328-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:31:35.328-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-02-10T02:31:35.331-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2062e1d2
+2026-02-10T02:31:35.331-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-02-10T02:31:35.331-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:31:35.331-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:31:35.345-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:31:35.347-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:31:35.388-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:31:35.425-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:31:35.432-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:31:35.434-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.251 seconds (process running for 2573.908)
+2026-02-10T02:31:35.435-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:32:26.857-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-10T02:32:26.868-05:00  INFO 21560 --- [bookstore] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:32:26.868-05:00  INFO 21560 --- [bookstore] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-02-10T02:32:26.870-05:00  INFO 21560 --- [bookstore] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2026-02-10T02:32:26.906-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:32:26.906-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:32:26.906-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:32:26.976-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:32:26.979-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T02:32:27.008-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:32:27.009-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:32:27.009-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:32:27.017-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:32:27.017-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 110 ms
+2026-02-10T02:32:27.030-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:32:27.031-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:32:27.033-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:32:27.033-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-02-10T02:32:27.036-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28494b9c
+2026-02-10T02:32:27.036-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-02-10T02:32:27.036-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:32:27.036-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:32:27.052-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:32:27.056-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:32:27.101-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:32:27.138-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:32:27.143-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:32:27.146-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.251 seconds (process running for 2625.621)
+2026-02-10T02:32:27.147-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:36:57.280-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-10T02:36:57.289-05:00  INFO 21560 --- [bookstore] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:36:57.290-05:00  INFO 21560 --- [bookstore] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-02-10T02:36:57.291-05:00  INFO 21560 --- [bookstore] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2026-02-10T02:36:57.321-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:36:57.321-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:36:57.321-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:36:57.389-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:36:57.393-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T02:36:57.422-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:36:57.422-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:36:57.422-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:36:57.430-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:36:57.430-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 108 ms
+2026-02-10T02:36:57.444-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:36:57.445-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:36:57.446-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:36:57.446-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-02-10T02:36:57.449-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45b0d609
+2026-02-10T02:36:57.449-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-02-10T02:36:57.449-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:36:57.449-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:36:57.460-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:36:57.464-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:36:57.497-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:36:57.529-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:36:57.533-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:36:57.535-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.222 seconds (process running for 2896.009)
+2026-02-10T02:36:57.536-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:38:03.873-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2026-02-10T02:38:03.884-05:00  INFO 21560 --- [bookstore] [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:38:03.885-05:00  INFO 21560 --- [bookstore] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2026-02-10T02:38:03.886-05:00  INFO 21560 --- [bookstore] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2026-02-10T02:38:03.922-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:38:03.922-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:38:03.922-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:38:03.997-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:38:04.001-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-02-10T02:38:04.035-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:38:04.035-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:38:04.035-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:38:04.043-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:38:04.043-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 120 ms
+2026-02-10T02:38:04.058-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:38:04.059-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:38:04.060-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:38:04.061-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-02-10T02:38:04.063-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c2ace91
+2026-02-10T02:38:04.063-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-02-10T02:38:04.063-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:38:04.063-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:38:04.077-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:38:04.081-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:38:04.118-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:38:04.156-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:38:04.160-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:38:04.163-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.25 seconds (process running for 2962.637)
+2026-02-10T02:38:04.163-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:38:05.578-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2026-02-10T02:38:05.588-05:00  INFO 21560 --- [bookstore] [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:38:05.588-05:00  INFO 21560 --- [bookstore] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-02-10T02:38:05.590-05:00  INFO 21560 --- [bookstore] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2026-02-10T02:38:05.621-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:38:05.621-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:38:05.621-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:38:05.703-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:38:05.708-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-02-10T02:38:05.740-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:38:05.741-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:38:05.741-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:38:05.750-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:38:05.750-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2026-02-10T02:38:05.764-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:38:05.765-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:38:05.766-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:38:05.766-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2026-02-10T02:38:05.769-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dcdd3f
+2026-02-10T02:38:05.769-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2026-02-10T02:38:05.769-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:38:05.769-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:38:05.782-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:38:05.785-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:38:05.822-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:38:05.854-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:38:05.858-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:38:05.861-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.248 seconds (process running for 2964.335)
+2026-02-10T02:38:05.861-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:38:35.661-05:00  INFO 21560 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-10T02:38:35.672-05:00  INFO 21560 --- [bookstore] [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:38:35.672-05:00  INFO 21560 --- [bookstore] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2026-02-10T02:38:35.673-05:00  INFO 21560 --- [bookstore] [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2026-02-10T02:38:35.704-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 21560 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:38:35.704-05:00 DEBUG 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:38:35.704-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:38:35.773-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:38:35.777-05:00  INFO 21560 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T02:38:35.805-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:38:35.805-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:38:35.805-05:00  INFO 21560 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:38:35.813-05:00  INFO 21560 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:38:35.813-05:00  INFO 21560 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 109 ms
+2026-02-10T02:38:35.825-05:00  INFO 21560 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:38:35.826-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:38:35.828-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:38:35.828-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2026-02-10T02:38:35.830-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ae257dd
+2026-02-10T02:38:35.830-05:00  INFO 21560 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2026-02-10T02:38:35.831-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:38:35.831-05:00  WARN 21560 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:38:35.840-05:00  INFO 21560 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:38:35.843-05:00  INFO 21560 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:38:35.881-05:00  WARN 21560 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:38:35.915-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:38:35.919-05:00  INFO 21560 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:38:35.921-05:00  INFO 21560 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.226 seconds (process running for 2994.395)
+2026-02-10T02:38:35.922-05:00  INFO 21560 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T02:40:31.665-05:00  INFO 21560 --- [bookstore] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:40:31.665-05:00  INFO 21560 --- [bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2026-02-10T02:40:31.667-05:00  INFO 21560 --- [bookstore] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2026-02-10T02:40:32.695-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 26472 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T02:40:32.697-05:00 DEBUG 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T02:40:32.697-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T02:40:32.729-05:00  INFO 26472 --- [bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-10T02:40:32.729-05:00  INFO 26472 --- [bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-10T02:40:33.183-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T02:40:33.239-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-02-10T02:40:33.610-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T02:40:33.618-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T02:40:33.618-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T02:40:33.651-05:00  INFO 26472 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T02:40:33.651-05:00  INFO 26472 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 922 ms
+2026-02-10T02:40:33.733-05:00  INFO 26472 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T02:40:33.785-05:00  INFO 26472 --- [bookstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-10T02:40:33.809-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T02:40:33.956-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T02:40:33.975-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-10T02:40:34.061-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3edf0c51
+2026-02-10T02:40:34.063-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-10T02:40:34.091-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T02:40:34.092-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T02:40:34.597-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T02:40:34.625-05:00  INFO 26472 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T02:40:34.821-05:00  WARN 26472 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T02:40:34.994-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T02:40:35.012-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T02:40:35.018-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 2.581 seconds (process running for 2.848)
+2026-02-10T02:41:01.329-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10T02:41:01.329-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-10T02:41:01.331-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-10T02:41:01.612-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 119 ms
+2026-02-10T02:57:36.812-05:00  WARN 26472 --- [bookstore] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2026-02-10T02:57:36.812-05:00 ERROR 26472 --- [bookstore] [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'hola2@gmail.com' for key 'users.email_UNIQUE'
+2026-02-10T02:57:36.825-05:00  WARN 26472 --- [bookstore] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'hola2@gmail.com' for key 'users.email_UNIQUE'] [insert into users (created_at,email,enabled,name,updated_at,username) values (?,?,?,?,?,?)]; SQL [insert into users (created_at,email,enabled,name,updated_at,username) values (?,?,?,?,?,?)]; constraint [users.email_UNIQUE]]
+2026-02-10T03:01:56.623-05:00  INFO 26472 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-10T03:01:56.637-05:00  INFO 26472 --- [bookstore] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:01:56.640-05:00  INFO 26472 --- [bookstore] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-10T03:01:56.645-05:00  INFO 26472 --- [bookstore] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-10T03:01:56.684-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 26472 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T03:01:56.684-05:00 DEBUG 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T03:01:56.685-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T03:01:56.787-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T03:01:56.793-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-02-10T03:01:56.843-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T03:01:56.843-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T03:01:56.843-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T03:01:56.855-05:00  INFO 26472 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T03:01:56.855-05:00  INFO 26472 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2026-02-10T03:01:56.873-05:00  INFO 26472 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T03:01:56.875-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T03:01:56.879-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T03:01:56.879-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-10T03:01:56.883-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1be9fe8
+2026-02-10T03:01:56.883-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-10T03:01:56.883-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T03:01:56.883-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T03:01:56.904-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T03:01:56.908-05:00  INFO 26472 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:01:56.957-05:00  WARN 26472 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T03:01:57.010-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T03:01:57.016-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T03:01:57.017-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.349 seconds (process running for 1284.847)
+2026-02-10T03:01:57.018-05:00  INFO 26472 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T03:02:59.279-05:00  INFO 26472 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-10T03:02:59.291-05:00  INFO 26472 --- [bookstore] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:02:59.292-05:00  INFO 26472 --- [bookstore] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-02-10T03:02:59.294-05:00  INFO 26472 --- [bookstore] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-02-10T03:02:59.336-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 26472 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T03:02:59.337-05:00 DEBUG 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T03:02:59.337-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T03:02:59.434-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T03:02:59.439-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-02-10T03:02:59.474-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T03:02:59.474-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T03:02:59.474-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T03:02:59.484-05:00  INFO 26472 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T03:02:59.485-05:00  INFO 26472 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 146 ms
+2026-02-10T03:02:59.501-05:00  INFO 26472 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T03:02:59.502-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T03:02:59.504-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T03:02:59.504-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-02-10T03:02:59.507-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c7262c8
+2026-02-10T03:02:59.507-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-02-10T03:02:59.508-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T03:02:59.508-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T03:02:59.524-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T03:02:59.529-05:00  INFO 26472 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:02:59.570-05:00  WARN 26472 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T03:02:59.609-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T03:02:59.614-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T03:02:59.617-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.295 seconds (process running for 1347.445)
+2026-02-10T03:02:59.617-05:00  INFO 26472 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T03:03:01.024-05:00  INFO 26472 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-02-10T03:03:01.034-05:00  INFO 26472 --- [bookstore] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:03:01.035-05:00  INFO 26472 --- [bookstore] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-02-10T03:03:01.036-05:00  INFO 26472 --- [bookstore] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-02-10T03:03:01.066-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 26472 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T03:03:01.066-05:00 DEBUG 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T03:03:01.066-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T03:03:01.140-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T03:03:01.144-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T03:03:01.174-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T03:03:01.174-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T03:03:01.174-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T03:03:01.182-05:00  INFO 26472 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T03:03:01.182-05:00  INFO 26472 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 115 ms
+2026-02-10T03:03:01.196-05:00  INFO 26472 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T03:03:01.197-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T03:03:01.199-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T03:03:01.199-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-02-10T03:03:01.201-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dee6c9c
+2026-02-10T03:03:01.201-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-02-10T03:03:01.201-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T03:03:01.201-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T03:03:01.214-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T03:03:01.217-05:00  INFO 26472 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:03:01.253-05:00  WARN 26472 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T03:03:01.287-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T03:03:01.292-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T03:03:01.295-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.239 seconds (process running for 1349.123)
+2026-02-10T03:03:01.295-05:00  INFO 26472 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-10T03:03:09.853-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-10T03:03:09.853-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-10T03:03:09.854-05:00  INFO 26472 --- [bookstore] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-10T03:03:09.862-05:00  WARN 26472 --- [bookstore] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2026-02-10T03:03:09.862-05:00 ERROR 26472 --- [bookstore] [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'hola2@gmail.com' for key 'users.email_UNIQUE'
+2026-02-10T03:03:09.867-05:00  WARN 26472 --- [bookstore] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'hola2@gmail.com' for key 'users.email_UNIQUE'] [insert into users (created_at,email,enabled,name,updated_at,username) values (?,?,?,?,?,?)]; SQL [insert into users (created_at,email,enabled,name,updated_at,username) values (?,?,?,?,?,?)]; constraint [users.email_UNIQUE]]
+2026-02-10T03:08:11.422-05:00  INFO 26472 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-10T03:08:11.432-05:00  INFO 26472 --- [bookstore] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:08:11.433-05:00  INFO 26472 --- [bookstore] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-02-10T03:08:11.435-05:00  INFO 26472 --- [bookstore] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-02-10T03:08:11.471-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 26472 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-10T03:08:11.471-05:00 DEBUG 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-10T03:08:11.471-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-10T03:08:11.549-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-10T03:08:11.552-05:00  INFO 26472 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2026-02-10T03:08:11.584-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-10T03:08:11.585-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-10T03:08:11.585-05:00  INFO 26472 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-10T03:08:11.594-05:00  INFO 26472 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-10T03:08:11.594-05:00  INFO 26472 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 123 ms
+2026-02-10T03:08:11.608-05:00  INFO 26472 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-10T03:08:11.609-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-10T03:08:11.610-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-10T03:08:11.610-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-02-10T03:08:11.615-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d13c717
+2026-02-10T03:08:11.615-05:00  INFO 26472 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-02-10T03:08:11.615-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-10T03:08:11.615-05:00  WARN 26472 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-10T03:08:11.629-05:00  INFO 26472 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-10T03:08:11.634-05:00  INFO 26472 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-10T03:08:11.680-05:00  WARN 26472 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-10T03:08:11.717-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-10T03:08:11.724-05:00  INFO 26472 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-10T03:08:11.726-05:00  INFO 26472 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.268 seconds (process running for 1659.556)
+2026-02-10T03:08:11.727-05:00  INFO 26472 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
