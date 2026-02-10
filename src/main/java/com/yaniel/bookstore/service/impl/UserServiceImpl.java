@@ -3,12 +3,15 @@ package com.yaniel.bookstore.service.impl;
 import com.yaniel.bookstore.models.entities.User;
 import com.yaniel.bookstore.models.mappers.UserMapper;
 import com.yaniel.bookstore.models.payload.CreatedUserDto;
+import com.yaniel.bookstore.models.payload.UsersDto;
 import com.yaniel.bookstore.repository.UserRepository;
 import com.yaniel.bookstore.service.UserService;
 import jakarta.transaction.Transactional;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Slf4j
 @Service
@@ -29,4 +32,12 @@ public class UserServiceImpl implements UserService {
         User saved = userRepository.save(user);
         return userMapper.toCreatedUserDto(saved);
     }
+
+    @Override
+    public List<UsersDto> findAll() {
+        return userRepository.findAll()
+                .stream()
+                .map(userMapper::toDto).toList();
+    }
+
 }
