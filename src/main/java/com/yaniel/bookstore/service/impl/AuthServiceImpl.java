@@ -17,14 +17,11 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -32,10 +29,10 @@ import java.util.stream.Collectors;
 public class AuthServiceImpl implements AuthService {
 
     private AuthenticationManager authenticationManager;
+    private UserRepository userRepository;
     private RoleRepository roleRepository;
     private PasswordEncoder passwordEncoder;
     private JwtTokenProvider jwtTokenProvider;
-    private UserRepository userRepository;
 
     public AuthServiceImpl(AuthenticationManager authenticationManager,
                            UserRepository userRepository,
@@ -50,17 +47,47 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public String login(LoginDto loginDto) {
+    public Authentication  authenticate(LoginDto loginDto) {
 
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
                 loginDto.getUsernameOrEmail(), loginDto.getPassword()));
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        String token = jwtTokenProvider.generateToken(authentication);
-
-        return token;
+        return authentication;
     }
+
+    // Obtener userId desde Authentication
+    @Override
+    public Long getUserId(Authentication authentication) {
+        String username = authentication.getName();
+        return getUserId(username);
+    }
+
+    // Obtener userId desde username
+    @Override
+    public Long getUserId(String username) {
+        return userRepository.findByNameOrEmail(username, username)
+                .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado"))
+                .getId();
+    }
+
+    // Construir Authentication desde User (para refresh)
+    @Override
+    public Authentication buildAuthentication(User user) {
+        Set<GrantedAuthority> authorities = user.getRoles()
+                .stream()
+                .map(role -> new SimpleGrantedAuthority(role.getName()))
+                .collect(Collectors.toSet());
+
+        return new UsernamePasswordAuthenticationToken(
+                user.getEmail(),
+                null,
+                authorities
+        );
+    }
+
+
 
     @Override
     @Transactional
