@@ -1,4 +1,4 @@
-package com.yaniel.bookstore.models.payload;
+package com.yaniel.bookstore.models.payload.users;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

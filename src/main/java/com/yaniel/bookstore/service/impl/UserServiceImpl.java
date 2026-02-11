@@ -1,16 +1,18 @@
 package com.yaniel.bookstore.service.impl;
 
+import com.yaniel.bookstore.errors.exception.ApiException;
 import com.yaniel.bookstore.errors.exception.ResourceNotFoundException;
 import com.yaniel.bookstore.models.entities.User;
 import com.yaniel.bookstore.models.mappers.UserMapper;
-import com.yaniel.bookstore.models.payload.CreatedUserDto;
-import com.yaniel.bookstore.models.payload.UsersDto;
+import com.yaniel.bookstore.models.payload.users.CreatedUserDto;
+import com.yaniel.bookstore.models.payload.users.UsersDto;
 import com.yaniel.bookstore.repository.UserRepository;
 import com.yaniel.bookstore.service.UserService;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -47,8 +49,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public UsersDto findByNameOrEmail(String nameOrEmail) {
+        User user = userRepository.findByNameOrEmail(nameOrEmail, nameOrEmail)
+                .orElseThrow(() ->
+                        new ApiException( HttpStatus.NOT_FOUND,"User not found with username or email: " + nameOrEmail));
+        return userMapper.toDto(user);
+    }
+
+    @Override
+    @Transactional
     public void deleteById(Long id) {
-        findById(id);
+        UsersDto user = findById(id);
         userRepository.deleteById(id);
     }
 

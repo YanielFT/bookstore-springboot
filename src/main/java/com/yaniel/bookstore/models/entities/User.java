@@ -7,6 +7,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Entity
@@ -27,11 +28,22 @@ public class User {
     private String username;
     @Column(columnDefinition = "BOOLEAN DEFAULT TRUE")
     private Boolean enabled;
+    @Column(nullable = false)
+    private String password;
+
     @CreatedDate
     @Column(updatable = false)
     private LocalDateTime createdAt;
     @LastModifiedDate
     private LocalDateTime updatedAt;
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Set<Role> roles;
 
     @PrePersist
     public void prePersist() {

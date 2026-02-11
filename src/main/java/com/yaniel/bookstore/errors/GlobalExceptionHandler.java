@@ -1,5 +1,6 @@
 package com.yaniel.bookstore.errors;
 
+import com.yaniel.bookstore.errors.exception.ApiException;
 import com.yaniel.bookstore.errors.exception.EmailAlreadyExistsException;
 import com.yaniel.bookstore.errors.exception.ResourceNotFoundException;
 import com.yaniel.bookstore.models.response.ApiResponse;
@@ -36,6 +37,14 @@ public class GlobalExceptionHandler {
                 .body(ApiResponse.error(message, HttpStatus.CONFLICT));
     }
 
+    @ExceptionHandler(ApiException.class)
+    public ResponseEntity<ApiResponse<Void>> handlePIException(ApiException ex,
+                                                               WebRequest webRequest){
+        return ResponseEntity.status(ex.getStatus())
+                .body(ApiResponse.error(ex.getMessage(), ex.getStatus()));
+    }
+
+
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ApiResponse<List<String>>> handleValidationException(MethodArgumentNotValidException ex) {
         List<String> errors = ex.getBindingResult()
@@ -65,5 +74,6 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body(ApiResponse.error(ex.getMessage(), HttpStatus.NOT_FOUND));
     }
+
 
 }

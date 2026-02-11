@@ -1,8 +1,7 @@
 package com.yaniel.bookstore.controllers;
 
-import com.yaniel.bookstore.models.entities.User;
-import com.yaniel.bookstore.models.payload.CreatedUserDto;
-import com.yaniel.bookstore.models.payload.UsersDto;
+import com.yaniel.bookstore.models.payload.users.CreatedUserDto;
+import com.yaniel.bookstore.models.payload.users.UsersDto;
 import com.yaniel.bookstore.models.response.ApiResponse;
 import com.yaniel.bookstore.models.response.PagedApiResponse;
 import com.yaniel.bookstore.service.UserService;
@@ -52,8 +51,7 @@ public class UserController {
 
     @DeleteMapping("/user/{id}")
     public ResponseEntity<ApiResponse<String>> deleteUser(@PathVariable Long id){
-        UsersDto dto = userService.findById(id);
-
+        userService.deleteById(id);
         return ResponseEntity.status(HttpStatus.OK)
                 .body(ApiResponse.success(null,"Usuario eliminado",HttpStatus.OK));
     }

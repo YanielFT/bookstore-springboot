@@ -1,9 +1,9 @@
 package com.yaniel.bookstore.models.mappers;
 
 import com.yaniel.bookstore.models.entities.User;
-import com.yaniel.bookstore.models.payload.CreatedUserDto;
 
-import com.yaniel.bookstore.models.payload.UsersDto;
+import com.yaniel.bookstore.models.payload.users.CreatedUserDto;
+import com.yaniel.bookstore.models.payload.users.UsersDto;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
