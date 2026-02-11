@@ -1,6 +1,5 @@
 package com.yaniel.bookstore.security;
 
-import com.yaniel.bookstore.service.AuthService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

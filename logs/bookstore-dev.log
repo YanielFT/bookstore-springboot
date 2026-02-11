@@ -4136,3 +4136,529 @@ Consider defining a bean of type 'com.yaniel.bookstore.service.RefreshTokenServi
 2026-02-11T13:19:53.248-05:00  INFO 25428 --- [bookstore] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-02-11T13:19:53.249-05:00  INFO 25428 --- [bookstore] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2026-02-11T13:22:21.608-05:00  WARN 25428 --- [bookstore] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.yaniel.bookstore.errors.exception.ApiException: Refresh token inválido o comprometido]
+2026-02-11T13:27:50.474-05:00  INFO 25428 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2026-02-11T13:27:50.489-05:00  INFO 25428 --- [bookstore] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:27:50.491-05:00  INFO 25428 --- [bookstore] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-11T13:27:50.497-05:00  INFO 25428 --- [bookstore] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-11T13:27:50.548-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:27:50.548-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:27:50.549-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:27:50.566-05:00  WARN 25428 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.yaniel.bookstore.service.impl.AuthServiceImpl]
+2026-02-11T13:27:50.580-05:00 ERROR 25428 --- [bookstore] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.yaniel.bookstore.service.impl.AuthServiceImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:251) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:314) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at com.yaniel.bookstore.BookstoreApplication.main(BookstoreApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.1.jar:3.2.1]
+Caused by: java.io.FileNotFoundException: class path resource [com/yaniel/bookstore/service/AuthService.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:630) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:956) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:396) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:342) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	... 23 common frames omitted
+
+2026-02-11T13:27:52.021-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:27:52.021-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:27:52.021-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:27:52.136-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:27:52.145-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2026-02-11T13:27:52.200-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:27:52.200-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:27:52.201-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:27:52.211-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:27:52.211-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2026-02-11T13:27:52.233-05:00  INFO 25428 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:27:52.235-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:27:52.238-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:27:52.238-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-11T13:27:52.241-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@729c757
+2026-02-11T13:27:52.241-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-11T13:27:52.242-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:27:52.242-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:27:52.282-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:27:52.298-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:27:52.344-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.y.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-11T13:27:52.412-05:00  WARN 25428 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11T13:27:52.499-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8b5e2ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e10db6d, org.springframework.security.web.context.SecurityContextHolderFilter@1c7515e0, org.springframework.security.web.header.HeaderWriterFilter@736039fa, org.springframework.web.filter.CorsFilter@464aabce, org.springframework.security.web.authentication.logout.LogoutFilter@741a533f, com.yaniel.bookstore.security.JwtAuthenticationFilter@4655ed5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c95e8f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ec8a373, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32f10d69, org.springframework.security.web.session.SessionManagementFilter@46d31628, org.springframework.security.web.access.ExceptionTranslationFilter@6f63ee62, org.springframework.security.web.access.intercept.AuthorizationFilter@6c03099f]
+2026-02-11T13:27:52.555-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-11T13:27:52.562-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-11T13:27:52.564-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.555 seconds (process running for 486.114)
+2026-02-11T13:27:52.565-05:00  INFO 25428 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-11T13:39:59.018-05:00  INFO 25428 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-02-11T13:39:59.031-05:00  INFO 25428 --- [bookstore] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:39:59.032-05:00  INFO 25428 --- [bookstore] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-02-11T13:39:59.033-05:00  INFO 25428 --- [bookstore] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-02-11T13:39:59.084-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:39:59.084-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:39:59.084-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:39:59.203-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:39:59.212-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2026-02-11T13:39:59.289-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:39:59.290-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:39:59.290-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:39:59.303-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:39:59.303-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2026-02-11T13:39:59.335-05:00  INFO 25428 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:39:59.337-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:39:59.340-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:39:59.340-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-02-11T13:39:59.343-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@382eeb70
+2026-02-11T13:39:59.343-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-02-11T13:39:59.344-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:39:59.344-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:39:59.382-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:39:59.397-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:39:59.440-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.y.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-11T13:39:59.525-05:00  WARN 25428 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11T13:39:59.623-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7eb62472, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7eadba0c, org.springframework.security.web.context.SecurityContextHolderFilter@1fc45177, org.springframework.security.web.header.HeaderWriterFilter@6aa3a581, org.springframework.web.filter.CorsFilter@8084f4, org.springframework.security.web.authentication.logout.LogoutFilter@704e1aa2, com.yaniel.bookstore.security.JwtAuthenticationFilter@2abafca9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b4972d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c315b97, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5061f47, org.springframework.security.web.session.SessionManagementFilter@186d3bc8, org.springframework.security.web.access.ExceptionTranslationFilter@668449b4, org.springframework.security.web.access.intercept.AuthorizationFilter@1702403b]
+2026-02-11T13:39:59.693-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-11T13:39:59.702-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-11T13:39:59.704-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.636 seconds (process running for 1213.255)
+2026-02-11T13:39:59.705-05:00  INFO 25428 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-11T13:40:54.043-05:00  INFO 25428 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 32 deletions, 0 modifications)
+2026-02-11T13:40:54.056-05:00  INFO 25428 --- [bookstore] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:40:54.056-05:00  INFO 25428 --- [bookstore] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-02-11T13:40:54.058-05:00  INFO 25428 --- [bookstore] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-02-11T13:40:54.104-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:40:54.104-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:40:54.105-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:40:54.107-05:00  WARN 25428 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.yaniel.bookstore.models.mappers.UserMapperImpl]
+2026-02-11T13:40:54.110-05:00 ERROR 25428 --- [bookstore] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [com.yaniel.bookstore.models.mappers.UserMapperImpl]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:251) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:314) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at com.yaniel.bookstore.BookstoreApplication.main(BookstoreApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.1.jar:3.2.1]
+Caused by: java.io.FileNotFoundException: class path resource [com/yaniel/bookstore/models/mappers/UserMapper.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:630) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:956) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:396) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:342) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	... 23 common frames omitted
+
+2026-02-11T13:43:38.790-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:43:38.791-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:43:38.791-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:43:38.879-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:43:38.880-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-02-11T13:43:38.921-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:43:38.922-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:43:38.923-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:43:38.931-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:43:38.931-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2026-02-11T13:43:38.947-05:00  INFO 25428 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:43:38.949-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:43:38.951-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:43:38.952-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-02-11T13:43:38.954-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@453eec4
+2026-02-11T13:43:38.954-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-02-11T13:43:38.955-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:43:38.955-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:43:38.959-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:43:38.960-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:43:38.981-05:00  WARN 25428 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11T13:43:39.034-05:00  WARN 25428 --- [bookstore] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 445d8ef2-b443-4604-92d1-54809fe13482
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-11T13:43:39.049-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7dab04ba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a873e14, org.springframework.security.web.context.SecurityContextHolderFilter@7ea4726b, org.springframework.security.web.header.HeaderWriterFilter@64a1d90c, org.springframework.web.filter.CorsFilter@3e4d8e2e, org.springframework.security.web.csrf.CsrfFilter@313aae3f, org.springframework.security.web.authentication.logout.LogoutFilter@315404d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e11c15, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4bda9f0f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4920dfda, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@193dd4e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a8b60d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21d95b81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c8b8c90, org.springframework.security.web.access.ExceptionTranslationFilter@a769d7, org.springframework.security.web.access.intercept.AuthorizationFilter@2842a975]
+2026-02-11T13:43:39.054-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-11T13:43:39.059-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-11T13:43:39.061-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.28 seconds (process running for 1432.611)
+2026-02-11T13:43:39.063-05:00  INFO 25428 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager'; @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2026-02-11T13:44:09.815-05:00  INFO 25428 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (24 additions, 0 deletions, 0 modifications)
+2026-02-11T13:44:09.828-05:00  INFO 25428 --- [bookstore] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:44:09.828-05:00  INFO 25428 --- [bookstore] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-02-11T13:44:09.830-05:00  INFO 25428 --- [bookstore] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-02-11T13:44:09.871-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:44:09.872-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:44:09.872-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:44:09.999-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:44:10.006-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-02-11T13:44:10.046-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:44:10.047-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:44:10.047-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:44:10.059-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:44:10.059-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2026-02-11T13:44:10.063-05:00 ERROR 25428 --- [bookstore] [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'tokenProvider': Error creating bean with name 'jwtTokenProvider': Lookup method resolution failed
+2026-02-11T13:44:10.064-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-11T13:44:10.065-05:00  WARN 25428 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-02-11T13:44:10.068-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-11T13:44:10.070-05:00 ERROR 25428 --- [bookstore] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at com.yaniel.bookstore.BookstoreApplication.main(BookstoreApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.1.jar:3.2.1]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:145) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:105) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:499) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:218) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-3.2.1.jar:3.2.1]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'tokenProvider': Error creating bean with name 'jwtTokenProvider': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126) ~[spring-boot-3.2.1.jar:3.2.1]
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1293) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.2.jar:6.1.2]
+	... 60 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.yaniel.bookstore.security.JwtTokenProvider] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@d9cd78f]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.2.jar:6.1.2]
+	... 73 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/yaniel/bookstore/errors/exception/ApiException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3404) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2506) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.2.jar:6.1.2]
+	... 75 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.yaniel.bookstore.errors.exception.ApiException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:469) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.1.jar:3.2.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 79 common frames omitted
+
+2026-02-11T13:44:15.598-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:44:15.598-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:44:15.598-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:44:15.732-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:44:15.741-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-02-11T13:44:15.779-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:44:15.779-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:44:15.779-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:44:15.789-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:44:15.789-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2026-02-11T13:44:15.807-05:00  INFO 25428 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:44:15.808-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:44:15.811-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:44:15.812-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-02-11T13:44:15.815-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27653e3b
+2026-02-11T13:44:15.815-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-02-11T13:44:15.815-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:44:15.815-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:44:15.849-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:44:15.863-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:44:15.894-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.y.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-11T13:44:15.897-05:00  WARN 25428 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\ceyfu\IdeaProjects\bookstore\target\classes\com\yaniel\bookstore\controllers\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'authServiceImpl' defined in file [C:\Users\ceyfu\IdeaProjects\bookstore\target\classes\com\yaniel\bookstore\service\impl\AuthServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-11T13:44:15.897-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:44:15.898-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-02-11T13:44:15.898-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-02-11T13:44:15.899-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-11T13:44:15.902-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-11T13:44:15.906-05:00 ERROR 25428 --- [bookstore] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.yaniel.bookstore.service.impl.AuthServiceImpl required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2026-02-11T13:45:16.399-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:45:16.399-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:45:16.400-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:45:16.540-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:45:16.542-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2026-02-11T13:45:16.597-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:45:16.598-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:45:16.598-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:45:16.609-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:45:16.609-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2026-02-11T13:45:16.626-05:00  INFO 25428 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:45:16.627-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:45:16.629-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:45:16.629-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-02-11T13:45:16.632-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65a7327
+2026-02-11T13:45:16.632-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-02-11T13:45:16.632-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:45:16.632-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:45:16.637-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:45:16.637-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:45:16.660-05:00  WARN 25428 --- [bookstore] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11T13:45:16.706-05:00  WARN 25428 --- [bookstore] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2dd89133-7ece-4f66-9cb1-95ab7286c9f6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-11T13:45:16.711-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d5b0d1c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d44af6b, org.springframework.security.web.context.SecurityContextHolderFilter@37afa115, org.springframework.security.web.header.HeaderWriterFilter@5332f687, org.springframework.web.filter.CorsFilter@9944c9a, org.springframework.security.web.csrf.CsrfFilter@677c287, org.springframework.security.web.authentication.logout.LogoutFilter@7bf60e8c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a27de7f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1fb5ff86, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9d4e08c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@71ee35d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f743e9d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5bf7bcb1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c422f47, org.springframework.security.web.access.ExceptionTranslationFilter@6bf7f406, org.springframework.security.web.access.intercept.AuthorizationFilter@2d7bb29e]
+2026-02-11T13:45:16.716-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-11T13:45:16.721-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-11T13:45:16.725-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Started BookstoreApplication in 0.344 seconds (process running for 1530.274)
+2026-02-11T13:45:16.725-05:00  INFO 25428 --- [bookstore] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-02-11T13:45:19.182-05:00  INFO 25428 --- [bookstore] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 37 class path changes (34 additions, 0 deletions, 3 modifications)
+2026-02-11T13:45:19.192-05:00  INFO 25428 --- [bookstore] [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:45:19.192-05:00  INFO 25428 --- [bookstore] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-02-11T13:45:19.194-05:00  INFO 25428 --- [bookstore] [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2026-02-11T13:45:19.229-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 25428 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:45:19.229-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:45:19.229-05:00  INFO 25428 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:45:19.375-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:45:19.383-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-02-11T13:45:19.528-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:45:19.529-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:45:19.529-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:45:19.538-05:00  INFO 25428 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:45:19.538-05:00  INFO 25428 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2026-02-11T13:45:19.567-05:00  INFO 25428 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:45:19.568-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:45:19.570-05:00  INFO 25428 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:45:19.570-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-02-11T13:45:19.572-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14408484
+2026-02-11T13:45:19.572-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-02-11T13:45:19.572-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:45:19.572-05:00  WARN 25428 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:45:19.603-05:00  INFO 25428 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:45:19.616-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:45:19.664-05:00 DEBUG 25428 --- [bookstore] [restartedMain] c.y.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-11T13:45:19.714-05:00  WARN 25428 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rateLimitAspect' defined in file [C:\Users\ceyfu\IdeaProjects\bookstore\target\classes\com\yaniel\bookstore\security\aspect\RateLimitAspect.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.yaniel.bookstore.security.service.RateLimiterService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-11T13:45:19.714-05:00  INFO 25428 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:45:19.714-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-02-11T13:45:19.728-05:00  INFO 25428 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2026-02-11T13:45:19.728-05:00  INFO 25428 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-11T13:45:19.731-05:00  INFO 25428 --- [bookstore] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-11T13:45:19.733-05:00 ERROR 25428 --- [bookstore] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.yaniel.bookstore.security.aspect.RateLimitAspect required a bean of type 'com.yaniel.bookstore.security.service.RateLimiterService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.yaniel.bookstore.security.service.RateLimiterService' in your configuration.
+
+2026-02-11T13:46:41.101-05:00  INFO 1620 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Starting BookstoreApplication using Java 17.0.17 with PID 1620 (C:\Users\ceyfu\IdeaProjects\bookstore\target\classes started by ceyfu in C:\Users\ceyfu\IdeaProjects\bookstore)
+2026-02-11T13:46:41.102-05:00 DEBUG 1620 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : Running with Spring Boot v3.2.1, Spring v6.1.2
+2026-02-11T13:46:41.103-05:00  INFO 1620 --- [bookstore] [restartedMain] c.yaniel.bookstore.BookstoreApplication  : The following 1 profile is active: "dev"
+2026-02-11T13:46:41.129-05:00  INFO 1620 --- [bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-11T13:46:41.129-05:00  INFO 1620 --- [bookstore] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-11T13:46:41.571-05:00  INFO 1620 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11T13:46:41.606-05:00  INFO 1620 --- [bookstore] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2026-02-11T13:46:42.008-05:00  INFO 1620 --- [bookstore] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-11T13:46:42.014-05:00  INFO 1620 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-11T13:46:42.014-05:00  INFO 1620 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-02-11T13:46:42.045-05:00  INFO 1620 --- [bookstore] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-11T13:46:42.045-05:00  INFO 1620 --- [bookstore] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 915 ms
+2026-02-11T13:46:42.120-05:00  INFO 1620 --- [bookstore] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11T13:46:42.149-05:00  INFO 1620 --- [bookstore] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-11T13:46:42.167-05:00  INFO 1620 --- [bookstore] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-11T13:46:42.287-05:00  INFO 1620 --- [bookstore] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11T13:46:42.302-05:00  INFO 1620 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-11T13:46:42.381-05:00  INFO 1620 --- [bookstore] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56503d22
+2026-02-11T13:46:42.382-05:00  INFO 1620 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-11T13:46:42.406-05:00  WARN 1620 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11T13:46:42.407-05:00  WARN 1620 --- [bookstore] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-11T13:46:42.890-05:00  INFO 1620 --- [bookstore] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11T13:46:42.932-05:00  INFO 1620 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:46:43.132-05:00 DEBUG 1620 --- [bookstore] [restartedMain] c.y.b.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-11T13:46:43.210-05:00  INFO 1620 --- [bookstore] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-11T13:46:43.368-05:00  WARN 1620 --- [bookstore] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'rateLimitAspect' defined in file [C:\Users\ceyfu\IdeaProjects\bookstore\target\classes\com\yaniel\bookstore\security\aspect\RateLimitAspect.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.yaniel.bookstore.security.service.RateLimiterService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-11T13:46:43.368-05:00  INFO 1620 --- [bookstore] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11T13:46:43.370-05:00  INFO 1620 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-11T13:46:43.374-05:00  INFO 1620 --- [bookstore] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-11T13:46:43.375-05:00  INFO 1620 --- [bookstore] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-11T13:46:43.382-05:00  INFO 1620 --- [bookstore] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-11T13:46:43.394-05:00 ERROR 1620 --- [bookstore] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.yaniel.bookstore.security.aspect.RateLimitAspect required a bean of type 'com.yaniel.bookstore.security.service.RateLimiterService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.yaniel.bookstore.security.service.RateLimiterService' in your configuration.
+

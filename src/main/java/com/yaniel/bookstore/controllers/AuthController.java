@@ -8,6 +8,7 @@ import com.yaniel.bookstore.models.payload.auth.RefreshTokenDto;
 import com.yaniel.bookstore.models.payload.users.CreatedUserDto;
 import com.yaniel.bookstore.models.response.JWTAuthResponse;
 import com.yaniel.bookstore.security.JwtTokenProvider;
+import com.yaniel.bookstore.security.annotation.RateLimited;
 import com.yaniel.bookstore.service.AuthService;
 import com.yaniel.bookstore.service.RefreshTokenService;
 import jakarta.validation.Valid;
@@ -15,8 +16,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,6 +40,7 @@ public class AuthController {
 
 
     // Build Login REST API
+    @RateLimited(limit = 5, duration = 60)
     @PostMapping(value = {"/login", "/signin"})
     public ResponseEntity<JWTAuthResponse> login(@RequestBody LoginDto loginDto){
         //1-login

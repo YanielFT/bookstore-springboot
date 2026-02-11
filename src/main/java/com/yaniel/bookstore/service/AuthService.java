@@ -4,9 +4,6 @@ import com.yaniel.bookstore.models.entities.User;
 import com.yaniel.bookstore.models.payload.auth.LoginDto;
 import com.yaniel.bookstore.models.payload.users.CreatedUserDto;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.UserDetails;
-
-import java.util.Optional;
 
 public interface AuthService {
     Authentication authenticate(LoginDto loginDto);

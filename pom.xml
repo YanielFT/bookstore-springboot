@@ -110,6 +110,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!--Rated Limited-->
+        <dependency>
+            <groupId>com.bucket4j</groupId>
+            <artifactId>bucket4j_jdk8-core</artifactId>
+            <version>8.10.1</version>
+        </dependency>
+
         <!-- Tomcat (WAR packaging) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
